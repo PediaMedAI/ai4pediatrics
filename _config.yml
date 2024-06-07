@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: aiaudit.org # the website title (if blank, full name will be used instead)
-first_name: aiaudit
+title: AI4Pedia # the website title (if blank, full name will be used instead)
+first_name: Workshop on AI for Pediatric Health
 middle_name:
-last_name: .org
+last_name: 
 email: info@aiaudit.org
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 # A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.

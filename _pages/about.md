@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: We are a group of humans who audit AI systems.
+description: Bring pediatricians, clinician and AI researchers together.
 
 profile:
   align: #right

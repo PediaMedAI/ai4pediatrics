@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contributors
+title: Organizers
 permalink: /contributors/
 description: The people and organizations who contribute to the network activities in random order. Each time a new contributor is added the order is reshuffled &#35;perpetualrevolution 😉.
 nav: true
