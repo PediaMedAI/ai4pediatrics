@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /ai4pediatrics/
 description: Bring pediatricians, clinician and AI researchers together.
 
 profile:
