@@ -13,96 +13,26 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-{% include visual.html %}
+<!-- {% include visual.html %} -->
 
 
-Modern AI systems based on deep learning, reinforcement learning or hybrids thereof constitute a flexible, complex and often opaque technology. Limits in our understanding of an AI system’s behavior constitute risks for system failure. Hence, the identification of failure modes in AI systems is an important pre-requisite for their reliable deployment to real-world settings.
+Current AI-for-health research often prioritizes adults. For instance, advanced AI-based diagnostic models typically target serious adult conditions such as breast cancer, pulmonary nodules, fractures, and diabetes. However, progress in AI algorithms for enhancing pediatrics and children's development has not kept pace. Significant differences in disease incidence, prognosis, and mental models between adults and pediatric populations—due to substantial physiological and anatomical distinctions—make it challenging to directly apply findings from adult studies to children. In the AI era, bespoke AI for children's health researches hold special significance: (i) AI for pediatrics is critical as early diagnosis of children diseases allows for early intervention, leading to improved prognoses and reduced infant mortality rate. (ii) Advanced AI, such as large language models (LLMs), also holds potential for supporting children's development and mental health, presenting a crucial new challenge.     
 
-*aiaudit.org* is a [cooperative of humans](https://aiaudit.org/contributors/) working at the intersection of machine learning research, regulation, software development and application domains. We design methods, processes and standardization contributing towards AI technology that can be trusted for use in real-world applications. 
-<!-- For that purpose, many of us contribute their expertise to standardization efforts such as the [ITU/WHO Focus Group on Artificial Intelligence for Health](https://www.itu.int/en/ITU-T/focusgroups/ai4h/Pages/default.aspx) or [Xavier AI Team](https://www.xavierhealth.org/news3/2020/11/11) of the FDA's Digital Health Center of Excellence. -->
+To address this gap, our workshop is primarily geared towards two benefits. First, it aims to foster discussions and collaborations on specific pediatric issues, including impactful pediatric medicine, particular pediatric diseases, and pediatrics in resource-limited areas, etc. Our workshop will bring together pediatricians and AI researchers, facilitating future cross-disciplinary research. Second, it provides an opportunity to present technically excellent AI-for-children research. We advocate for leveraging cutting-edge AI algorithms to solve the unique challenges in the pediatric, child caring, and discussing potential risk of AI for children.     
 
-This site is the group's interface to present and organize its work. We maintain information on current projects below. We are committed to equitable collaboration. Project groups form in a self-organized way and are open to interested persons from research, companies, the general public or otherwise.
+*Challenge 1: Scarce Data in Child Health* One of the primary challenges in applying AI models to child health is the lack of sufficient and high-quality data. Children data is inherently more limited compared to adult data for several reasons: (1) Fewer pediatric records exist compared to adult diseases. (2) Fewer examination tools and medicines are available for children compared to adults. (3) Pediatric diseases are typically more complex due to the rapid development from birth to adolescence, presenting unique challenges at each stage and often requiring more data. (4) Longitudinal data for children is often scarce due to difficulties in maintaining long-term studies and follow-ups with children patients. (5) Children’s limited ability to express and describe their symptoms often leads to under-diagnosis of diseases, especially in resource-limited areas.
+% Many pediatric healthcare facilities, especially in low-resource regions, lack the infrastructure and resources to collect, store, and share data systematically. 
 
-## Core activities
+*Challenge 2: AI for Overlooked Pediatric Diseases* Pediatric populations are often disproportionately affected by epidemics or rare genetic diseases such as Mpox, Duchenne muscular dystrophy, and Kawasaki disease, which did not receive the same level of attention and research as more common diseases. Cutting-edge AI algorithms have the potential to improve the detection, diagnosis, and management of these diseases by identifying nuanced patterns and risk factors specific to children.
 
-<div class="projects grid">
+*Challenge 3: AI for Child Mental Health and Better Development* Children are phenomenal learning machines, and the development of AI algorithms can, in turn, provide new insights into child development mechanisms and mental health, significantly enhancing our understanding of conditions such as \textit{autism} and \textit{cerebral palsy}. Besides, modern AI with its human-like communication abilities, such as multimodal large language models (MLLMs), have the potential to identify early signs and patterns from children's gaze, gestures, and dialogue that may indicate developmental issues, enabling earlier diagnosis and intervention. Moreover, research into these human-like AIs can also aid in understanding the intricate interplay of genetic, environmental, and social factors that influence children's mental development.
 
-  {% assign sorted_contributors = site.coreprojects | sort: "importance" %}
-  {% for contributor in sorted_contributors %}
-  <div class="grid-item">
-    {% if contributor.redirect %}
-    <a href="{{ contributor.redirect }}" target="_blank">
-    {% else %}
-    <a href="{{ contributor.url | relative_url }}">
-    {% endif %}
-      <div class="card hoverable">
-        {% if contributor.img %}
-        <img src="{{ contributor.img | relative_url }}" alt="contributor thumbnail">
-        {% endif %}
-        <div class="card-body">
-          <h2 class="card-title">{{ contributor.name }}</h2>
-          <!-- <p class="card-title">{{ contributor.affiliation }}</p> -->
-          <p class="card-text">{{ contributor.minibio }}</p>
-          <br/>
-          <div class="row ml-1 mr-1 p-0">
-            {% if contributor.mail %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="Email">
-                <a href="mailto:{{ contributor.mail | encode_email }}"><i class="fas fa-envelope"></i></a>
-              </div>
-            </div>
-            {% endif %}
-            {% if contributor.website %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="Website">
-                <a href="{{ contributor.website }}" target="_blank"><i class="fas fa-globe"></i></a>
-              </div>
-            </div>
-            {% endif %}
-            {% if contributor.twitter %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="Twitter">
-                <a href="{{ contributor.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
-              </div>
-            </div>
-            {% endif %}
-            {% if contributor.linkedin %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="LinkedIn">
-                <a href="{{ contributor.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-            {% endif %}
-            {% if contributor.googlescholar %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="Google Scholar">
-                <a href="{{ contributor.googlescholar }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-              </div>
-            </div>
-            {% endif %}
-            {% if contributor.github %}
-            <div class="col-sm-2">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ contributor.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
-              </div>
-              {% if contributor.github_stars %}
-              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fas fa-star"></i>
-                <span id="{{ contributor.github_stars }}-stars"></span>
-              </span>
-              {% endif %}
-            </div>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-{% endfor %}
+*Challenge 4: Risk for Child Development in the AI Ara*
+In the AI era, children and young people are inevitably exposed to human-like AIs, such as large language models (LLMs), which pose new challenges for their mental health, brain development, and cognitive growth. Recent research indicates that methods like in-context learning can make it easier than imagined to construct a ``malevolent'' AI. Even ``positive'' AIs may foster excessive dependency in children and potentially slow down their development of critical thinking skills. Thus, how to regulate AI as a positive guide for children's mental and brain development is a new and crucial topic.
 
-</div>
+*Challenge 5: Effective Usage of Adult Health Achievement for Children* Diseases may also appear very different in children, such as tuberculosis, and be misdiagnosed if relying on tools developed for adults. Combining pediatric and adult medical data without accounting for developmental stages may lead to invalid, ineffective, inapplicable, irresponsible algorithmic outputs. 
 
 
-{% if page.news %}
+<!-- {% if page.news %}
   {% include news.html %}
-{% endif %}
+{% endif %} -->
