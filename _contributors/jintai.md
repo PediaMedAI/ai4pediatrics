@@ -8,6 +8,6 @@ mail: cjt147@illinois.edu
 website: https://whatashot.github.io/
 twitter: 
 linkedin: 
-googlescholar:
+googlescholar: https://scholar.google.com/citations?user=ZiY3xYEAAAAJ&hl=en
 importance: 1
 ---

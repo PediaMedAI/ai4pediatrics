@@ -7,8 +7,8 @@ minibio: Xu is the co-founder and chief research scientist of PediaMed AI and ha
 mail: xucao2@illinois.edu
 website: https://www.irohxucao.com/
 twitter: 
-linkedin: 
-googlescholar:
+linkedin: https://www.linkedin.com/in/irohxu/
+googlescholar: https://scholar.google.com/citations?user=oXWRBrwAAAAJ
 importance: 1
 ---
 
