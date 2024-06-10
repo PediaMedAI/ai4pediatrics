@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Bring pediatricians, clinician and AI researchers together.
+description: Bring pediatricians, psychologists, educationists, clinicians and AI researchers together to think about the future.
 
 profile:
   align: #right
