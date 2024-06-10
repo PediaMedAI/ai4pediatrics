@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Join
-permalink: /ai4pediatrics/join/
+permalink: /join/
 nav: true
 nav-order: e
 
