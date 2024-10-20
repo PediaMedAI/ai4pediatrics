@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: AI4Pedia # the website title (if blank, full name will be used instead)
-first_name: Workshop on AI for Children and Pediatrics
+title: AI4CHL # the website title (if blank, full name will be used instead)
+first_name: Workshop on AI for Children (AI4CHL) 
 middle_name:
 last_name: 
 email: pediamedai@gmail.com
@@ -16,7 +16,7 @@ footer_text: >
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  https://www.pediamedai.com/ # the base hostname & protocol for your site
-baseurl: "/ai4pediatrics" #"/website/" # the subpath of your site, e.g. /blog/
+baseurl: "/ai4chl" #"/website/" # the subpath of your site, e.g. /blog/
 repository: "" #aiaudit-org/website
 last_updated: false # set to true if you want to display last updated in the footer
 
